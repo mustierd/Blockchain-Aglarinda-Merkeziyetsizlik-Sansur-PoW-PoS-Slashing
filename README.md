@@ -11,7 +11,7 @@
 
 #### 4. Blockchain Teknolojilerinde Sansürleme
 <a>&nbsp;&nbsp;&nbsp;&nbsp;4.1 Uygulama Katmanlı Sansürleme</a></br>
-<a>&nbsp;&nbsp;&nbsp;&nbsp;4.2 Protocol Katmanlı Sansürleme</a></br>
+<a>&nbsp;&nbsp;&nbsp;&nbsp;4.2 Protokol Katmanlı Sansürleme</a></br>
 <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.1 PoW Algoritmasında Protocol Katmanlı Sansürleme</a></br>
 <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.2 PoS Algoritmasında Protocol Katmanlı Sansürleme</a></br>
 #### 5. Blockchain Teknolojilerinde Slashing Kavramı
@@ -72,6 +72,47 @@
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Validatorler PoW ‘da olduğu gibi blok ödüllerini almazlar. Doğrulayıcılar işlem ücretlerini ödül olarak alırlar. Aşağıdaki grafik, Ethereum Merge sonraki PoS a geçişinin ardından blok ödüllerinin grafiğinin değişimini göstermektedir.</p>
 <p align="center"> 
-<img src="https://user-images.githubusercontent.com/82549640/218871428-2c6181f7-5fd2-4cdc-ab86-c44bdee0d501.png"></br> Şekil 5 - Blok Zinciri
+<img src="https://user-images.githubusercontent.com/82549640/218871428-2c6181f7-5fd2-4cdc-ab86-c44bdee0d501.png"></br> Şekil 1 - Günlük ethereum blok ödülü
 </p>
 
+#### 4. Blockchain Teknolojilerinde Sansürleme
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ethereum madenciliğinde yüzde 30’a yakın pay sahibi olan en büyük Ethereum havuzu Ethermine, Tornada Cash işlemlerini engellemeye başladı. Bunun sebebi ABD Tornada Cash zincirinde kara para aklandığını savunarak bu ağa yaptırım uygulamaya karar verdi. Bu yaptırım sonucu Ethermine havuzundaki madenciler, Tornado Cash ’e gönderilen işlemleri bloklara yazmak yerine işlemleri reddetmeye başladılar.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bir diğer sansürleme örnek yine aynı Tornado Cash vakası üzerinden en popüler merkeziyetsiz borsalardan biri olan UniSwap borsası tarafından gerçekleşti. UniSwap geliştiricileri, UniSwap web sitesi üzerinden Tornada Cash ile işlem geçmişi olan cüzdanları engellemeye başladı. Tornada Cash üzerinde gerçekleşen bu yaptırımlar sonucu yeni bir merkeziyetsizlik tartışmasına yol açtı.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Peki Blockchain teknolojilerinde sansürleme mümkün mü? Mümkün ise ne derece Merkeziyetsizliği etkiliyor?</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blockchain ağlarında 2 türlü sansürleme çeşiti vardır. Bunlar uygulama (App) ve Protocol katmanlı sansürleme olmak üzere 2 ye ayrılır. Dolayısı ile sansürleme ihtimali her zaman vardır. PoW ve PoS teknolojilerinde sansürleme durumuna karşılık alınan önlemler farklı çalışmaktadır. Bunları ayrı ayrı inceleyelim.</p>
+
+#### 4.1 Uygulama Katmanlı Sansürleme
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bunun en güzel örneği yukarıda bahsettiğim UniSwap ‘ın gerçekleştirdiği sansürlemedir. UniSwap geliştiricileri Tornado Cash ile etkileşime geçen hesapları tespit ederek kırmızı listeye aldı. Bu hesapları daha sonra UniSwap web sitesi üzerinden etkileşime geçmesini engellediler. Bu durum uygulama katmanlı bir sansürlemedir ve tamamen endişe edilecek, korkulacak bir durum değildir. Bu yöntem ile tam olarak Tornado Cash blok zinciri ile iletişimini engelleyemezler. Sadece Node ‘lara gönderilen isteklerin iletişimini engellediler. Peki bu nasıl oldu?</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;İlk olarak bir blok zincir ile nasıl iletişime geçiyoruz bundan bahsedeyim. Bildiğiniz üzere metamask, kullanıcıların private key anahtarlarını güvenli bir şekilde yöneten bir araçtır. Metamask ‘ın içerisinde varsayılan olarak infura tarafından yönetilen Node ’ları ile gelmektedir. Uygulama geliştiricileri veya kullanıcılar bir blok zinciri ile iletişime geçmek için ethers.js, web3.js gibi kütüphaneler ile birlikte metamask cüzdanını kullanarak Node ’ların anlayacağı biçimde isteklerini imzalayarak gönderir ve  blok zincir ile iletişime geçerler.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UniSwap tam olarak bu blok zincir ile iletişime geçecek Node ‘lara web sitesi üzerinden kırmızı listeye alınan hesapların iletişimine geçmesini engelledi. Blok zincir ile alakası olmayan ve risk teşkil etmeyen sansürlemedir. Bu durumun üstesinden gelmek için uygulama katmanlı sansürleme uygulamayan diğer platformlar üzerinden ve en sağlıklı ve karlı yöntem olan Full Node kurarak kendi Node ’larınız üzerinden Tornado Cash ‘e işlemlerinizi gönderebilirsiniz. Full Node kurmanın avantajlarını yazımın sonunda bahsedeceğim.</p>
+
+#### 4.2 Protokol Katmanlı Sansürleme
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bu sansürleme en korkulan ve merkeziyetsizliği bitirebilecek yöntemdir fakat o kadar kolay değildir. Hali hazırda PoW ve PoS gerçekleşecek protocol seviyesinde sansürlemeler için geliştirmiş engelleme yöntemleri bulunmaktadır. Her iki algoritma için sansürleme nasıl gerçekleşiyor ve alınan önlemler nelerdir bunları inceleyelim.</p>
+
+#### 4.2.1 PoW Algoritmasında Protokol Katmanlı Sansürleme
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bir madenci veya validator en basit açıklama ile  işlemlerinin doğruluğunu Node ‘lara sorar ve yeni bir blok ekleyerek ödülünü alır. Madenciler ağda gerçekleşen işlemleri kendi isteğine göre reddedebilir. Bu tamamen madencinin isteğine bağlıdır. Tornada Cash sansürü ile devam eder isek, Ethermine madenci havuzu madencilerin %30 oranına sahiptir. Ethermine şirketi uyguladığı bu sansür ile ağda %30 ‘luk oranda Tornada Cash ‘e gönderilen işlemler reddedilecektir. Bu korkulan bir durum değildir. Çünkü işlemleriniz tahmini 4-5 blok sonrasında geri kalan ve sansür uygulamayan %70 oranına sahip madencilere düşerek işleminiz onaylanacaktır. Sansür uygulayan madenciler için bir ceza işlemi uygulanmamaktadır. PoW da slashleme gibi bir ceza durumu yoktur. Peki PoW da korkulacak durum ne zaman gerçekleşir?</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eğer kötü niyetli, sansür uygulayan madencilerin oranı %51 ‘i geçer ise Tornada Cash ‘e gidecek işlemler tamamen engellenecek ve Tornada Cash ‘e iletişim tamamen kesilecektir. Bu durum gerçekleştiği zaman zaten ağın hakimiyeti çoğunlukla (%51) sansür uygulayan madencilerin elinde olduğu için merkeziyetsizlik bitmiş ve ağın hakimiyeti bu sansür uygulayan madenciler tarafından sağlanacaktır. Bunun olması günümüz teknolojisinde çok zordur. Biz sadece burada en ufak ihtimalleri de olsa ele alıyoruz.</p>
+
+#### 4.2.2 PoS Algoritmasında Protokol Katmanlı Sansürleme
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ethereum PoS algoritmasına geçtikten sonra merkeziyetsizlik hakkında endişeler ortaya çıktı. PoS, merkeziyetsizliği etkileyen bir faktör değildir. Yine merkeziyetsizlik konu başlığında değindiğimiz gibi bir ağın merkeziyetsizliğini etkileyen bilinç/faktör dağıtık bir yapıda Node kurmaktan geçer. Dolayısıyla bir sistemin sansürlenememesi için blok ekleyen madencilerin(validatörlerin) dağıtık olması gerekir. Tabi PoS ‘a geçildikten sonra merkezi borsalara stake edilerek kurulan validator bizi endişeye sokmaktadır.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sitemde validatörlerin merkezi borsalara ETH ‘lerini emanet ederek doğrulayıcı olması bizi endişe etmektedir. Örneğin merkezi bir borsa olan Binance ‘ın validator havuzlarına katılanların oranı, toplam madencilere oranı %10 diyelim. Tornada Ethermine şirketinin Tornada Cash ‘ e uyguladığı sansür gibi Binance havuzunda olan validatörlerde sansür uygulamaya karar verdiğini düşünelim. Validatorler kendi isteklerine göre işlemleri doğrulamaya bildiklerini konuşmuştuk. Yine bu %10 luk dilime düşen işlemler reddedilir fakat ortalama 4-5 bilek sonra %90 ihtimalle diğer validatorler sonucu işlemler doğrulanarak bloğa eklenir. Halen korkulacak bir durum yok. Peki ne zaman korkmalıyız?</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ethereum ağı üzerinde validatorler tarafından gerçekleşecek sansür oranı 1/3 ‘ün altında ise endişe edilecek bir durum yoktur. Ethereum topluluğunda %30’oranının altına sahip sansür uygulamaları göz ardı edilebileceğini söylemiştir. %30 oranının altında sansürleme uygulayan validatorler işlemleri “Biz görmedik” deme haklarına sahiptir. Dolayısıyla bu sansür uygulayan validatörlere bir cezai işlemi uygulanmamaktadır. Ancak bu oran %30 üzerine çıkarsa artık kötü niyetli veya sansür uygulayan bu validatorler ağ üzerindeki yavaştan işlemlerin değişikliğine yol açmaktadır ve bu durumda sansür uygulayan validatörlere slashing uygulanarak cezalandırılır. Slashing konusunu bir sonraki başlıkta açıklayacağım.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bizi korkutan durumun ne olduğuna tekrar döner isek, insanların merkezi borsa veya havuzlara teslim ettiğin ETH ‘ler ile doğrulayıcı hakkına sahip olması. Daha sonra bu havuzların sansürleme uygulayabilecekleri durumunu da göz önüne getirirsek merkeziyetsizliği zedeleyecektir. Bizlerin olabildiğince merkeziyetsiz dağıtık validatorler/Node ‘lar kurarak merkeziyetsizliği güçlendirme bilincine sahip olmalıyız. Çünkü olası bir sansür durumunda ağın hakimiyeti sansür uygulayan kişiler tarafından sağlanırsa  bir Fork ‘a gidilir fakat bu Fork ile geçilen yeni zinciri benimseyecekler mi? Bu hem piyasayı kötü etkileyecektir hem de bu durum bizi korkutmaktadır. Fakat bu durum o kadar kolay değildir ve sansüre karşı alınan önlemler vardır. Bunların en önemlisi Slashing kavramıdır.</p>
+
+<p align="center"> 
+<img src="https://user-images.githubusercontent.com/82549640/218874581-76394ab2-e016-464a-9384-8b37d8f0e648.png"></br> Şekil 2 - Ethereum Pos Validator Havuzları
+</p>
