@@ -116,3 +116,18 @@
 <p align="center"> 
 <img src="https://user-images.githubusercontent.com/82549640/218874581-76394ab2-e016-464a-9384-8b37d8f0e648.png"></br> Şekil 2 - Ethereum Pos Validator Havuzları
 </p>
+
+#### 5. Blockchain Teknolojilerinde Slashing Kavramı
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blockchain ağlarında PoW algoritmasını kullanan zincirlerde slashing kavramı yoktur. Bu kavram PoS algoritmasını kullanan zincirlerde geçerlidir. Slashing, ağda kötü niyetli olarak tabir ettiğimiz istenmeyen işlem hareketlerinde bulunan validatörleri cezalandırarak, ellerindeki ETH ’lerin gerekirse tamamını elinden alarak validatorlükten saf dışı bırakarak cezalandırma olarak açıklayabiliriz. Peki bu işlemi hangi durumlarda ve nasıl yaparız?</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hali hazırda PoS algoritmasında kötü blok basan, elektriği kesilen validatörlere hali hazırda ceza uygulanmaktadır. Bir validator, ağ tarafında bu istenmeyen davranışları gerçekleştirir ise 32 ETH kitleyerek sahip olduğu doğrulayıcı hakkında, ceza çeşitine göre elinden belli bir miktar ETH alınır. Ancak slashleme sonucu kötü davranışlara devam eden validatörlerin elinden tüm ETH ‘leri alınarak doğrulayıcı hakkını kaybeder.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kötü niyetli validatörleri slashleye bilmemiz için 32 ETH ‘e sahip olmamız gerekmez. Slashleme Node ‘lar tarafından gerçekleşir. Bildiğimiz üzere Node ‘ olmamız için gerekli yazılımı indirerek olabiliyorduk. Node ‘lar bu yazılımın içerisine script kodlar ekleyerek bu slashleme mekanizmasını çalıştırmaktadır. Örneğin “Tornada Cash ‘e gelen işlemleri hangi validatorler engelliyor ise hepsini slashle” anlamına gelen gerekli script’i yazarak bu mekanizmayı çalıştırabiliyoruz. Bu kararı bir veya bir kişi almamaktadır. Bu kararı topluluğa ait olan yani Node ‘lar ortak kararı alarak gerçekleştirir.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hangi validatorler nerelere sansür uygulanıyor bu gibi bilgiler bazı Explorer ve arşiv Node ‘lar tarafından herkes görebilir. Fakat sansürün tespiti kolay değildir. Elinizde kesin ipuçları veya bilgiler dahilinde tespit etmeniz kolaylaşacaktır.</p>
+
+<p align="center"> 
+<img src="https://user-images.githubusercontent.com/82549640/218875655-e6e15d1d-a25d-480f-a77c-106564d1e021.png"></br> Şekil 3 - https://www.beaconcha.in/validator
+</p>
+
