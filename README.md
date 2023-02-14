@@ -131,3 +131,9 @@
 <img src="https://user-images.githubusercontent.com/82549640/218875655-e6e15d1d-a25d-480f-a77c-106564d1e021.png"></br> Şekil 3 - https://www.beaconcha.in/validator
 </p>
 
+#### 6. Full Node Kurmanın Avantajları
+
+1) Ağa ve kendine katkınız vardır.</br>
+2) Tornada Cash ‘den bloklandığın zaman veya infura çöktüğü zaman kendi nodunuz üzerinden ağa işlemlerinizi gönderebilirsiniz.</br>
+3) Ağda Gas ücretlerinin fazla olduğu zamanlarda kendiniz düşük Gas ücretleri ile işlemlerinizi gerçekleştirebilirsiniz.</br>
+4) Ciddi anlamda gizlilik sağlar. Full Node kurarsanız IP ‘niz büyük ölçüde gizli kalır.</br>
