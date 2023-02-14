@@ -1,27 +1,32 @@
-# Blockchain_Aglarinda-Merkeziyetsizlik-Sansur-PoW-PoS-Slashing
-Blockchain teknolojilerinde merkeziyetsizliğin tam olarak felsefesi, Ethereum Merge 'den sonra PoS 'a geçmesi ile birlikte gelen Slashing kavramı, PoW ve PoS protokollerinde blok nasıl eklenir gibi konuları ele aldık. 
+# Blockchain Ağlarında Merkeziyetsizlik,Sansürleme ve Slashing
+<p>Merhaba ben Mustafa ERDOĞAN, Bu yazımda sizlere blok zincirlerinde sansürleme ve slashing kavramlarını ele alacağım. Bildiğimiz üzere geçtiğimiz yıl  Ethereum PoS algoritmasına geçti. Bu geçiş ile beraber bazı sorular ve endişeler ortaya çıktı. Bunlar;</p>
+•	Ethereum merkeziyetsizlikten uzaklaşıyor mu?</br>
+•	Ethereum PoS yapısında nasıl valitador olunur?  bloklar nasıl ekleniyor? Parayı veren düdüğü çalacak mı? Ee hani merkeziyetsizdi bu! …vb.</br></br>
+<p>Bu sorular ve endişeler, Tornada Cash blok zinciri üzerinde sansür uygulanması ile birleşerek Blockchain camiasında bir kargaşaya neden oldu. Şimdi bu endişeler ve sorunlara yol açan konuyu geniş kapsamlı, konu başlıkların altında inceleyeceğiz.</p>
 
 ## İÇİNDEKİLER
+#### 1. GİRİŞ</br>
+#### 2. Merkeziyetsizlik tam olarak nedir?</br>
+#### 3. PoW ve PoS Protokollerinde Bloklar nasıl eklenir?</br>
+3.1 PoW Protokolünde Blok Ekleme</br>
+3.2	PoS Protokolünde Blok Ekleme </br>
+3.3 Ethereum PoS'da Validator Olma</br>
+3.3.1 Evde Solo Staking</br>
+3.3.2 Bir Hizmet Olarak Stake Etme </br>
+3.3.3 Havuzlanmış Staking (Staking Pool) </br>
+3.3.4 Merkezi Borsalar </br>
+#### 4. Blockchain Teknolojilerinde Sansürleme
+4.1 Uygulama Katmanlı Sansürleme</br>
+4.2 Protocol Katmanlı Sansürleme</br>
+4.2.1 PoW Algoritmasında Protocol Katmanlı Sansürleme</br>
+4.2.2 PoS Algoritmasında Protocol Katmanlı Sansürleme</br>
+#### 4. Blockchain Teknolojilerinde Slashing Kavramı
+#### 5. Full Node Kurmanın Avantajları
 
-### 1. GİRİŞ</br>
-### 2. TEMEL KAVRAMLAR</br>
-2.1 Veri Nedir?</br>
-2.2 Veri Tabanları</br>
-2.3 Merkezi Olmayan Sistemler</br>
-2.4 Hash Nedir?</br>
-2.5 Kriptoloji Nedir?</br>
-2.6 Peer To Peer ( Eşten Eşe - P2P ) Kavramı</br>
-2.7 Blockchain Teknolojisinin Felsefesi</br>
-### 3. BLOCKCHAIN’E GİRİŞ</br>
-3.1 Blockchain’in Tarihçesi</br>
-3.2 Blockchain Nedir?</br>
-3.2.1 İşlemler (Transactions)</br>
-3.2.1.1 Dijital İmza</br>
-3.2.2 Dağıtılmış Defter Sistemi</br>
-3.2.3 Merkezi Olmayan Yapısı</br>
-3.2.4 Düğümler (Nodes)</br>
-3.2.5 Ağdaki Fikir Birliği (Consensus)</br>
-3.2.5.1 İş Kanıtı (Proof of Work - PoW) </br>
-3.2.5.2 Hisse Kanıtı (Proof of Stake - PoS) </br>
-3.2.6 Değişmezlik (İmmulability) </br>
-3.3 Blockchain Ağlarında Gizlilik</br>
+## 1. GİRİŞ
+<p>Merhaba ben Mustafa ERDOĞAN, Bu yazımda sizlere blok zincirlerinde sansürleme ve slashing kavramlarını ele alacağım. Bildiğimiz üzere geçtiğimiz yıl  Ethereum PoS algoritmasına geçti. Bu geçiş ile beraber bazı sorular ve endişeler ortaya çıktı. Bunlar;</p>
+•	Ethereum merkeziyetsizlikten uzaklaşıyor mu?</br>
+•	Ethereum PoS yapısında nasıl valitador olunur?  bloklar nasıl ekleniyor? Parayı veren düdüğü çalacak mı? Ee hani merkeziyetsizdi bu! …vb.</br></br>
+<p>Bu sorular ve endişeler, Tornada Cash blok zinciri üzerinde sansür uygulanması ile birleşerek Blockchain camiasında bir kargaşaya neden oldu. Şimdi bu endişeler ve sorunlara yol açan konuyu geniş kapsamlı, konu başlıkların altında inceleyeceğiz.</p>
+
+### 2. TEMEL KAVRAMLAR
