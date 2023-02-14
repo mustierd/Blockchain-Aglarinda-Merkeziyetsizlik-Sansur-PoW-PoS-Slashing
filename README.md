@@ -79,6 +79,10 @@
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ethereum madenciliğinde yüzde 30’a yakın pay sahibi olan en büyük Ethereum havuzu Ethermine, Tornada Cash işlemlerini engellemeye başladı. Bunun sebebi ABD Tornada Cash zincirinde kara para aklandığını savunarak bu ağa yaptırım uygulamaya karar verdi. Bu yaptırım sonucu Ethermine havuzundaki madenciler, Tornado Cash ’e gönderilen işlemleri bloklara yazmak yerine işlemleri reddetmeye başladılar.</p>
 
+<p align="center"> 
+<img src="https://user-images.githubusercontent.com/82549640/218877789-9cb11ac5-d67a-4ce1-a425-874c6dd34c1e.png"></br> Şekil 3 - Ethermine tarafından Tornada Cash 'e  gönderilen işlemler 
+</p>
+
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bir diğer sansürleme örnek yine aynı Tornado Cash vakası üzerinden en popüler merkeziyetsiz borsalardan biri olan UniSwap borsası tarafından gerçekleşti. UniSwap geliştiricileri, UniSwap web sitesi üzerinden Tornada Cash ile işlem geçmişi olan cüzdanları engellemeye başladı. Tornada Cash üzerinde gerçekleşen bu yaptırımlar sonucu yeni bir merkeziyetsizlik tartışmasına yol açtı.</p>
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Peki Blockchain teknolojilerinde sansürleme mümkün mü? Mümkün ise ne derece Merkeziyetsizliği etkiliyor?</p>
