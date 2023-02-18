@@ -145,3 +145,5 @@
 2) Tornada Cash ‘den bloklandığın zaman veya infura çöktüğü zaman kendi nodunuz üzerinden ağa işlemlerinizi gönderebilirsiniz.</br>
 3) Ağda Gas ücretlerinin fazla olduğu zamanlarda kendiniz düşük Gas ücretleri ile işlemlerinizi gerçekleştirebilirsiniz.</br>
 4) Ciddi anlamda gizlilik sağlar. Full Node kurarsanız IP ‘niz büyük ölçüde gizli kalır.</br>
+
+Ele almış olduğum bu yazımda soru ve önerilerinizi @mustierd twitter hesabından ulaştırabilirsiniz.
