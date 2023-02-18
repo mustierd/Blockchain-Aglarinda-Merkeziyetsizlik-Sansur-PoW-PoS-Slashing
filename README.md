@@ -1,7 +1,8 @@
 # Blockchain Ağlarında Merkeziyetsizlik,Sansürleme ve Slashing
 <p align="center"> 
-<img src="https://user-images.githubusercontent.com/82549640/219879103-fc15a311-b43c-4252-99e1-f5157ef388a3.png">
+<img src="https://user-images.githubusercontent.com/82549640/219879191-ed2c506e-1254-4880-8f2b-e8b6d9303b8c.png">
 </p>
+
 
 
 ## İÇİNDEKİLER
