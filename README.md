@@ -122,7 +122,7 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bizi korkutan durumun ne olduğuna tekrar döner isek, insanların merkezi borsa veya havuzlara teslim ettiğin ETH ‘ler ile doğrulayıcı hakkına sahip olması. Daha sonra bu havuzların sansürleme uygulayabilecekleri durumunu da göz önüne getirirsek merkeziyetsizliği zedeleyecektir. Bizlerin olabildiğince merkeziyetsiz dağıtık validatorler/Node ‘lar kurarak merkeziyetsizliği güçlendirme bilincine sahip olmalıyız. Çünkü olası bir sansür durumunda ağın hakimiyeti sansür uygulayan kişiler tarafından sağlanırsa  bir Fork ‘a gidilir fakat bu Fork ile geçilen yeni zinciri benimseyecekler mi? Bu hem piyasayı kötü etkileyecektir hem de bu durum bizi korkutmaktadır. Fakat bu durum o kadar kolay değildir ve sansüre karşı alınan önlemler vardır. Bunların en önemlisi Slashing kavramıdır.</p>
 
 <p align="center"> 
-<img src="https://user-images.githubusercontent.com/82549640/218874581-76394ab2-e016-464a-9384-8b37d8f0e648.png"></br> Şekil 2 - Ethereum Pos Validator Havuzları
+<img src="https://user-images.githubusercontent.com/82549640/219879331-e52d40f3-8e17-4ac0-a173-2113f519b535.png"></br> Şekil 2 - Ethereum Pos Validator Havuzları
 </p>
 
 ## 5. Blockchain Teknolojilerinde Slashing Kavramı
